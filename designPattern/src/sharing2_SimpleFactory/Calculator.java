@@ -1,4 +1,4 @@
-package sharing1_SimpleFactory;
+package sharing2_SimpleFactory;
 
 /**
  * 規範計算邏輯的方法

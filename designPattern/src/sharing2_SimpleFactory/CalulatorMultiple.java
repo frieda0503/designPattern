@@ -1,4 +1,4 @@
-package sharing1_SimpleFactory;
+package sharing2_SimpleFactory;
 
 /**
  * 乘法計算

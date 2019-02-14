@@ -1,4 +1,4 @@
-package sharing1_SimpleFactory;
+package sharing1_WithoutFactory;
 
 /**
  * 只留下業務邏輯的部分<br>
