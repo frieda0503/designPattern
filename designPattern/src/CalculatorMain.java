@@ -4,6 +4,11 @@ import sharing2_SimpleFactory.CalculatorSimpleFactory;
 import sharing3_Factory.CalculatorAddFactory;
 
 public class CalculatorMain {
+	// 輸入值
+	static int a = 1000;
+	static int b = 2000;
+	static String operator = "+";
+
 	public static void main(String[] args) {
 		calculator();
 		calculatorSimpleFactory();
@@ -15,11 +20,6 @@ public class CalculatorMain {
 	 */
 	public static void calculator() {
 		System.out.println(">>>> Calculator without pattern 測試 <<<< ");
-
-		// 輸入值
-		int a = 10;
-		int b = 20;
-		String operator = "+";
 
 		try {
 			// 計算並輸出
@@ -40,11 +40,6 @@ public class CalculatorMain {
 	public static void calculatorSimpleFactory() {
 		System.out.println(">>>> Simple Calculator Factory 測試 <<<< ");
 
-		// 輸入值
-		int a = 10;
-		int b = 20;
-		String operator = "+";
-
 		try {
 			System.out.println("輸入: " + a + operator + b);
 			Calculator calculator = CalculatorSimpleFactory.getCalculator(operator);
@@ -53,8 +48,8 @@ public class CalculatorMain {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("======================================");
 
+		System.out.println("======================================");
 	}
 
 	/**
@@ -62,10 +57,6 @@ public class CalculatorMain {
 	 */
 	public static void calculatorFactory() {
 		System.out.println(">>>> Calculator Factory 測試 <<<< ");
-
-		// 輸入值
-		int a = 10;
-		int b = 20;
 
 		try {
 			System.out.println("輸入: " + a + " + " + b);
@@ -75,6 +66,7 @@ public class CalculatorMain {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+
 		System.out.println("======================================");
 	}
 }
