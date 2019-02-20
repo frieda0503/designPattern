@@ -6,7 +6,7 @@ package sharing4_AbstractFactory;
  * @author frieda
  *
  */
-public class ApplianceFactory implements AnniversaryFactory {
+public class ApplianceFactory extends AnniversaryFactory {
 
 	@Override
 	public int getDiscount(int total) {

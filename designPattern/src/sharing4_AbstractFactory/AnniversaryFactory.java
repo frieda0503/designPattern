@@ -6,8 +6,8 @@ package sharing4_AbstractFactory;
  * @author frieda
  *
  */
-public interface AnniversaryFactory {
-	int getDiscount(int total);
+public abstract class AnniversaryFactory {
+	abstract int getDiscount(int total);
 
-	int getCoupon(int total);
+	abstract int getCoupon(int total);
 }
